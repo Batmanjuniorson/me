@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CornHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .corn {
+            color: black;
+        }
+        .hub {
+            color: orange;
+        }
+        .partnership {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: gray;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            margin-top: 20px;
+        }
+        .left {
+            width: 50%;
+            padding: 20px;
+            border-right: 2px solid #ccc;
+            overflow-y: auto;
+            height: 300px;
+        }
+        .right {
+            width: 50%;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>
+        <span class="corn">Corn</span><span class="hub">Hub</span>
+    </h1>
+
+    <!-- Partnership Text -->
+    <p class="partnership">Partnership with Antony the GOAT and Spencer 🐐🔥</p>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Side: Formatting Text -->
+        <div class="left">
+            <h2>Formatting Text</h2>
+            <p><b>Font size = 7</b></p>
+            <h1>HTML</h1>
+            <p><b>Font size = 3:</b> HTML</p>
+            <p><b>Font color = red:</b> <span style="color: red;">HTML</span></p>
+            <p><b>Font size = 6 and color = red:</b></p>
+            <h1 style="color: red;">HTML</h1>
+            <p><b>Bold, underline, and italic:</b></p>
+            <p><i><b>Example</b></i></p>
+            <p><b>Bold:</b> <b>HTML</b></p>
+            <p><b>Strong:</b> <strong>HTML</strong></p>
+            <p><b>Underline:</b> <u>HTML</u></p>
+        </div>
+
+        <!-- Right Side: Login Form -->
+        <div class="right">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username">
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password">
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
